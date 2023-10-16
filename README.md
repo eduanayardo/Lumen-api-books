@@ -216,7 +216,7 @@ Al desarrollar aplicaciones, nunca confiemos en el usuario. Siempre tendremos qu
 
 En Lumen, es muy fácil validar los datos entrantes de su aplicación. Y esté nos proporciona acceso al método auxiliar `$this->validate`.
 
-Y como hacemos esto, si abrimos el archivo `BookController` podra observar que se agrego el siguiente código:
+Y como hacemos esto, si abrimos el archivo `BookController` podra observar que se agregó el siguiente código:
 ```php
 $this->validate($request, [
     'title' => 'required',
@@ -226,11 +226,11 @@ $this->validate($request, [
     'edition_number' => 'numeric'
 ]);
 ```
-Con el cual estamos validando los datos que el usuario nos esta proporcionando
+Con el cual estamos validando los datos que el usuario nos está proporcionando
 ![Alt text](public/images/readme/image-7.png)
 Se Validan las solicitudes entrantes y se devuelve el mensaje de error apropiado del campo validado.
 - _title_, _authors_ e _isbn_, son requeridos.
-- _year_ corresponde a un número y esté debe de tener una longitud de  4 digitos.
+- _year_ corresponde a un número y esté debe de tener una longitud de 4 dígitos.
 
 > **Nota**: Valide siempre los datos entrantes. ¡Nunca confíes en tus usuarios!
 
