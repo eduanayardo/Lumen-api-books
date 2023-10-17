@@ -165,7 +165,7 @@ Cree un nuevo archivo, `BooksController.php` en el directorio `app/Http/Controll
         }
     }
 ```
-Analicemos el código anterior. Primero, usamos `App\Book`, lo que nos permitió requerir el modelo de Autor que creamos anteriormente.
+Analicemos el código anterior. Primero, usamos `App\Book`, lo que nos permitió requerir el modelo de Book que creamos anteriormente.
 
 A continuación, hemos creado los siguientes cinco métodos:
 
